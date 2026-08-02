@@ -24,3 +24,12 @@ function createPhotoSection() {
 }
 
 createPhotoSection();
+
+async function testQuery() {
+  try {
+    const response = await fetch('https://example.com/wp-json/wp/v2/media');
+    console.log('testQuery Response:', response);
+  } catch (error) {
+    console.error(error);
+  }
+}
