@@ -12,8 +12,12 @@ app.use(Express.json())
 
 app.use((req, res, next)=>{
     console.log('<___ Body Logger Start ___>')
-    console.log(req.body)
-    console.log('<___ Body Logger End ___')
+    if (req.body) {
+            console.log(req.body)
+    } else {
+        console.log('>> No request body exists <<')
+    }
+    console.log('<___ Body Logger End ___>')
     next()
 })
 
