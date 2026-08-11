@@ -28,10 +28,6 @@ app.get('/*splat', (req, res, next)=>{
     next(ApiError.pageNotFound('Page Not Found'))
 })
 
-
-
 app.use(apiErrorHandler)
 
-app.listen(PORT, ()=>{
-    console.log(`Server is listening on PORT ${PORT}`)
-})
+module.exports = app
