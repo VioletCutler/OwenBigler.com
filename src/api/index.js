@@ -1,6 +1,6 @@
 export async function apiHealth() {
   try {
-    const response = await fetch(`http://localhost:1337/api/health`);
+    const response = await fetch(`../../api/health`);
     console.log("API response :", response);
   } catch (error) {
     console.error(error);
@@ -9,7 +9,7 @@ export async function apiHealth() {
 
 export async function fetchImages() {
     try {
-        const response = await fetch(`http://localhost:1337/api/images`, {
+        const response = await fetch(`../../api/images`, {
             headers : {
                 'Content-Type': 'application/json'
             }
