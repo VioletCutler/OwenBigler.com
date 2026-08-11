@@ -1,14 +1,14 @@
 const morgan = require('morgan')
 const Express = require("express");
 const app = Express();
-const PORT = 1337
+const PORT = process.env.PORT || 1337
 const apiErrorHandler = require('./api/error/api-error-handler')
 const ApiError = require('./api/error/ApiError')
+
+
 const cors = require('cors')
 
-app.use(cors({
-    origin: 'http://localhost:8888'
-}))
+app.use(cors())
 app.use(morgan('dev'))
 app.use(Express.json())
 
