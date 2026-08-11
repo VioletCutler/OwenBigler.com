@@ -6,7 +6,9 @@ const apiErrorHandler = require('./api/error/api-error-handler')
 const ApiError = require('./api/error/ApiError')
 const cors = require('cors')
 
-app.use(cors())
+app.use(cors({
+    origin: 'http://localhost:8888'
+}))
 app.use(morgan('dev'))
 app.use(Express.json())
 
