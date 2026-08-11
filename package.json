@@ -3,7 +3,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node": "node index.js"
+    "nodeLocal": "node app.local.js",
+    "node": "node app.js",
+    "build": "npm install && npm run node"
   },
   "dependencies": {
     "cloudinary": "^2.10.0",
@@ -11,6 +13,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "morgan": "^1.11.0",
-    "node": "^26.5.1"
+    "node": "^26.5.1",
+    "serverless-http": "^4.0.0"
   }
 }
