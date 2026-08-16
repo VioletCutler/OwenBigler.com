@@ -1,15 +1,7 @@
-export async function apiHealth() {
-  try {
-    const response = await fetch(`../../api/health.js`);
-    console.log("API response :", response);
-  } catch (error) {
-    console.error(error);
-  }
-}
-
 export async function fetchImages() {
     try {
-        const response = await fetch(`../../api/images.js`, {
+        console.log('line 3')
+        const response = await fetch(`../../images`, {
             headers : {
                 'Content-Type': 'application/json'
             }

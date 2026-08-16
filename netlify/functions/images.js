@@ -24,7 +24,7 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ success: true, images })
     };
   } catch (error) {
-    console.error('❌ Cloudinary error:', error.message);
+    console.error('Cloudinary error:', error.message);
     return {
       statusCode: 500,
       headers: { 'Content-Type': 'application/json' },
