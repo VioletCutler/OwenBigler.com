@@ -6,7 +6,7 @@ Create Mobile Menu
 const mobileMenu = document.getElementsByClassName("mobile-menu")[0];
 const mobileMenuLinks = document.getElementsByClassName("mobile-link");
 function closeMobileMenuOnResize() {
-  mobileMenuClassList = Array.from(mobileMenu.classList);
+  const mobileMenuClassList = Array.from(mobileMenu.classList);
   if (window.innerWidth > 500 && mobileMenuClassList.includes("open")) {
     toggleMobileMenu();
   }

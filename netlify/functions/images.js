@@ -16,7 +16,10 @@ exports.handler = async (event, context) => {
       .execute();
       
     const _images = query.resources;
-    const images = _images.map((image) => image.secure_url);
+    const images = _images.map((image) => image.secure_url.replace(
+        '/upload/',
+        '/upload/w_600,h_400,c_fill,q_auto,f_auto/'
+      ));
 
     return {
       statusCode: 200,

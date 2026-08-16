@@ -168,7 +168,6 @@ a:active {
 }
 
 
-
 /* ======== MOBILE MENU ======== */
 
 .mobile-menu {
@@ -251,6 +250,8 @@ a:active {
 
 .photos {
   width: 100%;
+  height: auto;
+  display: block;
   padding: 0;
   border: var(--border-light);
   border-width: var(--border-width-all);
