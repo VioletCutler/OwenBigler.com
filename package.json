@@ -15,5 +15,8 @@
     "morgan": "^1.11.0",
     "node": "^26.5.1",
     "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^27.1.1"
   }
 }
